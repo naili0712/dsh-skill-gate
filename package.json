@@ -1,0 +1,35 @@
+{
+  "name": "dsh-skill-gate",
+  "version": "0.1.0",
+  "description": "会话级技能门禁与加载审计：默认只看得到技能名，正文需授权；记录模型真正读过哪些技能。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.0"
+  },
+  "license": "MIT"
+}

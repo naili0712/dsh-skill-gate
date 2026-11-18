@@ -1,0 +1,4 @@
+# dsh-skill-gate：宿主侧行 + 浏览器侧 bundle（dsh.client 声明）
+- insert:
+    - id: dsh-skill-gate
+      name: dsh-skill-gate

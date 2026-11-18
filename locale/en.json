@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Skill Gate"
+  },
+  "_localPatch": "local patch: 本地汉化，插件升级后用 registry.json 重新写入"
+}
